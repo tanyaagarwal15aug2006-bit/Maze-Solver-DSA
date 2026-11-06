@@ -89,28 +89,33 @@ else {
     cout << "1 = Wall" << endl;
     cout << "* = Final Path" << endl;
 
-    cout << "\nChoose Algorithm:" << endl;
-    cout << "1. BFS (Breadth First Search)" << endl;
-    cout << "2. DFS (Depth First Search)" << endl;
+  cout << "\nChoose Algorithm:" << endl;
+cout << "1. BFS (Breadth First Search)" << endl;
+cout << "2. DFS (Depth First Search)" << endl;
+cout << "3. Compare BFS and DFS" << endl;
 
     cout << "\nEnter your choice: ";
-    while (!(cin >> algorithmChoice) || algorithmChoice < 1 || algorithmChoice > 2) {
-    cout << "Invalid choice! Enter 1 or 2: ";
+   while (!(cin >> algorithmChoice) || algorithmChoice < 1 || algorithmChoice > 3) {
+    cout << "Invalid choice! Enter 1, 2 or 3: ";
     cin.clear();
     cin.ignore(1000, '\n');
 }
 
-    if (algorithmChoice == 1) {
-        cout << "\nStarting BFS..." << endl;
-        bfs(maze, 0, 0, 4, 4);
-    }
-    else if (algorithmChoice == 2) {
-        cout << "\nStarting DFS..." << endl;
-        dfs(maze, 0, 0, 4, 4);
-    }
-    else {
-        cout << "Invalid algorithm choice!" << endl;
-    }
+   if (algorithmChoice == 1) {
+    cout << "\nStarting BFS..." << endl;
+    bfs(maze, 0, 0, 4, 4);
+}
+else if (algorithmChoice == 2) {
+    cout << "\nStarting DFS..." << endl;
+    dfs(maze, 0, 0, 4, 4);
+}
+else if (algorithmChoice == 3) {
+    cout << "\n========== BFS RESULT ==========" << endl;
+    bfs(maze, 0, 0, 4, 4);
+
+    cout << "\n========== DFS RESULT ==========" << endl;
+    dfs(maze, 0, 0, 4, 4);
+}
 
     cout << "\n========== END OF PROGRAM ==========" << endl;
 
