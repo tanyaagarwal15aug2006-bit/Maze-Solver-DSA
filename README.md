@@ -89,3 +89,11 @@ BFS explores all neighbouring cells level by level. It guarantees the shortest p
 
 ### Why DFS?
 DFS explores one path deeply before backtracking. It can find a valid path but does not guarantee the shortest path.
+## Additional Features
+
+- Three predefined maze configurations.
+- Multiple path maze for comparing BFS and DFS.
+- No-path detection.
+- Repeat option to solve multiple mazes without restarting.
+- Input validation for maze and algorithm selection.
+- Clear display of the selected maze and final path.
