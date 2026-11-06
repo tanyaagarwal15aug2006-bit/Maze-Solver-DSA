@@ -97,3 +97,5 @@ DFS explores one path deeply before backtracking. It can find a valid path but d
 - Repeat option to solve multiple mazes without restarting.
 - Input validation for maze and algorithm selection.
 - Clear display of the selected maze and final path.
+- Compare BFS and DFS on the same maze.
+- Display path results for both algorithms.
