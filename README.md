@@ -73,3 +73,19 @@ Run the project on Windows:
 
 **Project:** Maze Solver  
 **Subject:** Data Structures and Algorithms (DSA)
+## Algorithm Analysis
+
+Let:
+- V = Number of open cells (vertices).
+- E = Number of valid connections (edges).
+
+| Algorithm | Data Structure | Time Complexity | Space Complexity |
+|---|---|---|---|
+| BFS | Queue | O(V + E) | O(V) |
+| DFS | Stack | O(V + E) | O(V) |
+
+### Why BFS?
+BFS explores all neighbouring cells level by level. It guarantees the shortest path in an unweighted maze.
+
+### Why DFS?
+DFS explores one path deeply before backtracking. It can find a valid path but does not guarantee the shortest path.
